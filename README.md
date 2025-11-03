@@ -23,9 +23,9 @@ To create sections for each of these headings or for individual plots, create a 
 
 Step 1. Load our data!
 In a the Course Project folder on Blackboard you will find three data files: Resting.mat, Exercise.mat, and BoxBreathing.mat. Each filename corresponds to the condition that it was collected under. The data itself consists of a three column array. The first column is the time vector in s, the second column is the recorded ECG in mV, and the last column is a calculation of the instantaneous heart rate based on the ECG. NOTE: This calculation is done by the software and may not be accurate, so we’re not going to use it!
-1) Load the file using the load() command. Make sure that your data files are either in your working directory, or you include the complete filepath.
-2) The exported .mat files contain a variable called b1 containing your time, ECG, and HR data in columns 1 through 3, respectively. Use help followed by the function name if you need assistance with any MATLAB function. You’ll only need the first two columns.
-3) Repeat this process for the other two files. If you try loading them before extracting your data from b1, they will overwrite your previous files because they contain the same variable names.
+Load the file using the load() command. Make sure that your data files are either in your working directory, or you include the complete filepath.
+The exported .mat files contain a variable called b1 containing your time, ECG, and HR data in columns 1 through 3, respectively. Use help followed by the function name if you need assistance with any MATLAB function. You’ll only need the first two columns.
+Repeat this process for the other two files. If you try loading them before extracting your data from b1, they will overwrite your previous files because they contain the same variable names.
 
 
 
