@@ -155,12 +155,18 @@ Visually examining the R and T components of the signal in the resting data duri
 
 Step 9: Run a two-sided t-test using ttest2
 A typical last step when performing data analysis like we are doing is to do some statistics on the data. Matlab has lots of built-in functions for that! One of the most basic analyses we can do is called a ‘t-test’. 
+
 In brief, and somewhat simplifying the notion, a t-test will compare a dataset against a specified value (an average) and determine if that dataset is consistent with that average value. Alternatively, we can compare two datasets and compare them against each other to see if they are similar (statistically). This latter test is called a ‘two-sample t-test’ (because we have two datasets, or samples). 
+
 Matlab has a nice built-in function to run a two-sample t-test, called ttest2. 
+
 Take a peak at this function's documentation to see how it works. 
+
 Understanding a t-test in its entirety is way beyond the scope of this course, but at its core a t- test boils down to a simple decision: is there enough evidence to support the idea that our two data samples are different (in technical terms this is called ‘rejecting the null hypothesis’), or must we instead claim that there is simple not enough evidence to make such a claim (technically, lacking any evidence that they are different we adopt a ‘null hypothesis’ that they are not different). 
-(Notice, in the second case, we are not saying they are the same, we are just saying that we cannot claim they are different. This tiresome legalese has a long history, but is important to underscore).
-From our above plots, it should be pretty clear that our heart rate during rest and exercise seem pretty different, and there should be strong evidence to suggest that they are different. Let’s run a t-test to make this claim statistically! The output of the ttest2 function is a 1 or a 0, 1 if there is enough evidence to claim the two datasets are different (‘reject the null hypothesis’) and 0 if we cannot claim this (‘cannot reject the null hypothesis’).
+
+From our above plots, it should be pretty clear that our heart rate during rest and exercise seem pretty different, and there should be strong evidence to suggest that they are different. Let’s run a t-test to make this claim statistically! 
+
+The output of the ttest2 function is a 1 or a 0, 1 if there is enough evidence to claim the two datasets are different (‘reject the null hypothesis’) and 0 if we cannot claim this (‘cannot reject the null hypothesis’).
 
 Using a for-loop and any conditional statements (e.g. if else, etc.), execute 2 t-tests, as described below:
 
