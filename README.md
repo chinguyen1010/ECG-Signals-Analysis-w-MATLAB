@@ -37,13 +37,22 @@ Repeat this process for the other two files. If you try loading them before extr
 
 Step 2: Plot our Signals!
 Before we analyze anything, we first want to visualize our data to get an idea of what it looks like. This allows us to make sure that the quality is good enough to analyze (or if we should go back and collect more before we waste time on analysis) and to see what features of our data we might exploit for that analysis.
+
 Plot 10 seconds of the resting ECG. Look for 10 seconds with a stable baseline. Set the y-scale so you can see the shape of your ECG waveforms easily.
-Assume you’re going to want this figure later and you’re going to want to put it in something you’re going to put in another document. Let’s make sure it’s formatted appropriately to put in another document. That is, let’s make sure that it has axis labels(use xlim() and ylim()), the lines are thick (the ‘LineWidth’ parameter in plot()), and the fonts are large enough that if we shrink it down and put it in a report, people can still read it (fontsize() of 16). (You can’t believe how often that isn’t the case!) Then we’ll save it.
+Assume you’re going to want this figure later and you’re going to want to put it in something you’re going to put in another document. Let’s make sure it’s formatted appropriately to put in another document. 
+
+That is, let’s make sure that it has axis labels(use xlim() and ylim()), the lines are thick (the ‘LineWidth’ parameter in plot()), and the fonts are large enough that if we shrink it down and put it in a report, people can still read it (fontsize() of 16). Then we’ll save it.
+
 Plot your other two files worth of data, too.
+
 We can even put all three sets of data together in the same figure using subplot(). 
-Subplot(m,n,k) makes a grid of m x n grid of plots where k is the current plot. Try
-plotting 60 seconds of all three conditions on a 3 x 1 subplot. See if you can find data that has a relatively even baseline for each condition. You’ll see why in a minute. Ok. Just by plotting our data there are some things we can tell about it right away. 
+
+Subplot(m,n,k) makes a grid of m x n grid of plots where k is the current plot. 
+
+Try plotting 60 seconds of all three conditions on a 3 x 1 subplot. See if you can find data that has a relatively even baseline for each condition. You’ll see why in a minute. Ok. Just by plotting our data there are some things we can tell about it right away. 
+
 First, looking at the 10-second plot, there is a clear pattern to each cardiac cycle, so we can use that to our advantage. The QRS-complex (that sharp peak that you see) is a nice distinct feature that is easy to pick out.
+
 Also, looking at our three conditions, it is clear that heart rate speeds up with exercise. Variability is harder to assess at this scale, but if you look closely you can see some variation in the intervals during box breathing that you can’t see in the resting and exercise cases.
 
 
